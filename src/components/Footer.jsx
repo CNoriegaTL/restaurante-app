@@ -21,7 +21,9 @@ function Footer() {
               type='email'
               placeholder='Tu Email'
             />
-            <Button buttonStyle='btn--outline'>Suscribete</Button>
+            <Button to='/' buttonStyle='btn--outline'>
+              Suscribete
+            </Button>
           </form>
         </div>
       </section>
@@ -29,7 +31,7 @@ function Footer() {
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
             <h2>Nosotros</h2>
-            <Link to='/sign-up'>Menú</Link>
+            <Link to='/menu'>Menú</Link>
             <Link to='/'>Acerca de nosotros</Link>
             <Link to='/'>Trabaja con nosotros</Link>
             <Link to='/'>Ingredientes</Link>
@@ -56,11 +58,11 @@ function Footer() {
         <div class='social-media-wrap'>
           <div class='footer-logo'>
             <Link to='/' className='social-logo'>
-              TACO TUESDAY
+              TACO Y BURRITOS
               <i class='fa-solid fa-pepper-hot' />
             </Link>
           </div>
-          <small class='website-rights'>TACOS TUESDAY © 2023</small>
+          <small class='website-rights'>TACOS Y BURRITOS © 2023</small>
           <div class='social-icons'>
             <Link
               class='social-icon-link facebook'

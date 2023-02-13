@@ -13,13 +13,13 @@ function Cards() {
               src='images/tacos-hero.jpeg'
               text='Prueba nuestros tacos con los ingredientes mas frescos'
               label='Tacos'
-              path='/products'
+              path='/menu'
             />
             <CardItem
               src='images/burrito-1.jpeg'
               text='Prueba nuestros burritos, no te arrepentiras'
               label='Burritos'
-              path='/products'
+              path='/menu'
             />
           </ul>
           <ul className='cards__items'>
@@ -27,13 +27,13 @@ function Cards() {
               src='images/nachos.jpeg'
               text='Disfruta con tus amigos los mejores nachos'
               label='Nachos'
-              path='/products'
+              path='/menu'
             />
             <CardItem
               src='images/trago.jpeg'
               text='Tenemos una amplia variedad de tragos'
               label='Bar'
-              path='/products'
+              path='/menu'
             />
           </ul>
         </div>

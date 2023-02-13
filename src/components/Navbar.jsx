@@ -29,7 +29,7 @@ const Navbar = () => {
       <nav className='navbar'>
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            TACO TUESDAY<i className='fa-solid fa-pepper-hot'></i>
+            TACO Y BURRITOS<i className='fa-solid fa-pepper-hot'></i>
           </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'}></i>
@@ -41,34 +41,26 @@ const Navbar = () => {
               </Link>
             </li>
             <li className='nav-item'>
-              <Link
-                to='/services'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
+              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
                 Nosotros
               </Link>
             </li>
             <li className='nav-item'>
-              <Link
-                to='/products'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
+              <Link to='/menu' className='nav-links' onClick={closeMobileMenu}>
                 Menú
               </Link>
             </li>
             <li className='nav-item'>
               <Link
-                to='/sign-up'
+                to='/reservas'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Ingresar
+                Reservas
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>REGISTRATE</Button>}
+          {/* {button && <Button buttonStyle='btn--outline'>REGISTRATE</Button>} */}
         </div>
       </nav>
       <Outlet />
