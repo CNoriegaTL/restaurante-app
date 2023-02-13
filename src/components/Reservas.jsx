@@ -2,6 +2,7 @@ import { db } from '../config/Firebase';
 import { useState } from 'react';
 import { collection, addDoc } from 'firebase/firestore';
 import { async } from '@firebase/util';
+import './Reservas.css';
 
 const Reservas = () => {
   const valorInicial = {
@@ -46,9 +47,9 @@ const Reservas = () => {
   return (
     <div>
       <div>
-        <h2>Reservas</h2>
+        <h2 className='text-center mb-4'>Reservas</h2>
         {/* Formulario */}
-        <div>
+        <div className='reservas--container'>
           <form onSubmit={reservarMesa}>
             <div>
               <div>
@@ -56,7 +57,7 @@ const Reservas = () => {
                   type='text'
                   name='name'
                   className='form-control mb-3'
-                  placeholder='Ingresa tu nombre y apellido'
+                  placeholder='Ingresa tu nombre'
                   onChange={catchInputs}
                   value={user.name}
                 />
@@ -80,7 +81,7 @@ const Reservas = () => {
                   type='number'
                   name='comensales'
                   className='form-control mb-3'
-                  placeholder='Indica el N° de comensales'
+                  placeholder='Indica N° de comensales'
                   onChange={catchInputs}
                   value={user.comensales}
                 />

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { db } from '../config/Firebase';
 import { collection, getDocs } from 'firebase/firestore';
+import { Card, Button, Col, Row } from 'react-bootstrap';
 
 const Menu = () => {
   const [menu, setMenu] = useState([]);
@@ -29,20 +30,28 @@ const Menu = () => {
   console.log(menu);
 
   return (
-    <div>
-      <h1 className='text-center'>Menu</h1>
-      <div>
+    <div className='container--menu'>
+      <h1>Menu</h1>
+      <Row xs={1} md={3} className='g-4'>
         {menu.map((plato) => (
-          <div key={plato.id}>
-            <div>
-              <img src={plato.image} alt={plato.name} />
-              <h2>{plato.name}</h2>
-              <p>{plato.description}</p>
-              <button>Precio: ${plato.price}</button>
-            </div>
-          </div>
+          <Col>
+            <Card
+              className='card d-flex flex-column'
+              key={plato.id}
+              style={{ width: '18rem' }}
+            >
+              <Card.Img variant='top' src={plato.image} />
+              <Card.Body className='d-flex flex-column justify-content-end align-items-center'>
+                <Card.Title>{plato.name}</Card.Title>
+                <Card.Text>{plato.description}</Card.Text>
+                <Button variant='primary' href='#' target='_blank'>
+                  {plato.price}
+                </Button>
+              </Card.Body>
+            </Card>
+          </Col>
         ))}
-      </div>
+      </Row>
     </div>
   );
 };
