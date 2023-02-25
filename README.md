@@ -8,7 +8,7 @@ Tabla de contenidos:
 
 # Descripcion del proyecto:
 
-El proyecto consiste en una app de un restaurante de comida mexicana, se creo usando React JS y React Router.
+El proyecto consiste en una app de un restaurante de comida mexicana, se creo usando React JS y React Router. Se uso firestore database para la información del menu y la gestión de reservas.
 
 # Tecnologias usadas en el proyecto:
 
