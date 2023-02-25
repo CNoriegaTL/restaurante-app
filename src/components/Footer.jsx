@@ -38,7 +38,7 @@ function Footer() {
             <Link to='/'>Preguntas frecuentes</Link>
           </div>
           <div class='footer-link-items'>
-            <h2>Contactanos</h2>
+            <h2>Contáctanos</h2>
             <Link to='/'>Contacto</Link>
             <Link to='/'>Sugerencias</Link>
             <Link to='/'>Eventos</Link>

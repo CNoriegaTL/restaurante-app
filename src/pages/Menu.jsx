@@ -31,7 +31,7 @@ const Menu = () => {
 
   return (
     <div className='container--menu'>
-      <h1>Menu</h1>
+      <h1>Menú</h1>
       <Row xs={1} md={3} className='g-4'>
         {menu.map((plato) => (
           <Col>

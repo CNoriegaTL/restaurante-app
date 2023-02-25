@@ -1,5 +1,4 @@
 .hero-container {
-  /* background: url('/images/img-home.jpg') center center/cover no-repeat; */
   background-image: url('/public/images/taco-home.jpeg');
   background-position: center;
   background-repeat: no-repeat;
